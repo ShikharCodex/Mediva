@@ -10,7 +10,7 @@ export function Navbar() {
         <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
           <a href="#features">Features</a>
           <a href="#how-it-works">How it Works</a>
-          <a href="#pricing">Pricing</a>
+          <a href="#pricing">Free</a>
         </nav>
         <div className="flex items-center gap-3">
           <Link href="/login" className="rounded-lg px-4 py-2 text-sm text-slate-700">
