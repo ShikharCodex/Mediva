@@ -38,27 +38,40 @@ export default function LoginPage() {
 
       {/* Left side - Branding */}
       <div className="hidden lg:flex flex-col justify-center flex-1 p-16 relative z-10">
-        <Link href="/" className="absolute top-12 left-16 flex items-center gap-2 text-2xl font-bold text-slate-900">
+        <Link
+          href="/"
+          className="absolute top-12 left-16 flex items-center gap-2 text-2xl font-bold text-slate-900"
+        >
           <ShieldCheck className="w-8 h-8 text-sky-600" />
           MedExplain <span className="text-sky-600">AI</span>
         </Link>
         <div className="max-w-xl">
           <h1 className="text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-            Welcome Back to <br /> <span className="gradient-text">MedExplain AI.</span>
-          </h1>s
+            Welcome Back to <br />{" "}
+            <span className="gradient-text">MedExplain AI.</span>
+          </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
-            Log in to access your previous medical report explanations and analyze new documents instantly.
+            Log in to access your previous medical report explanations and
+            analyze new documents instantly.
           </p>
           <div className="glass rounded-2xl p-6 border border-white/60">
-            <p className="text-sm font-semibold text-slate-500 mb-2">QUICK TIP</p>
-            <p className="text-slate-700 font-medium">You can view all your previously uploaded reports and AI summaries in your dashboard history.</p>
+            <p className="text-sm font-semibold text-slate-500 mb-2">
+              QUICK TIP
+            </p>
+            <p className="text-slate-700 font-medium">
+              You can view all your previously uploaded reports and AI summaries
+              in your dashboard history.
+            </p>
           </div>
         </div>
       </div>
 
       {/* Right side - Form */}
       <div className="flex-1 flex items-center justify-center p-6 sm:p-12 relative z-10">
-        <Link href="/" className="lg:hidden absolute top-8 left-8 flex items-center gap-2 text-xl font-bold text-slate-900">
+        <Link
+          href="/"
+          className="lg:hidden absolute top-8 left-8 flex items-center gap-2 text-xl font-bold text-slate-900"
+        >
           <ShieldCheck className="w-6 h-6 text-sky-600" />
           MedExplain AI
         </Link>
@@ -85,7 +98,9 @@ export default function LoginPage() {
                 />
               </div>
               {form.formState.errors.email && (
-                <p className="mt-1 text-sm text-rose-500 font-medium">{form.formState.errors.email.message}</p>
+                <p className="mt-1 text-sm text-rose-500 font-medium">
+                  {form.formState.errors.email.message}
+                </p>
               )}
             </div>
 
@@ -102,7 +117,9 @@ export default function LoginPage() {
                 />
               </div>
               {form.formState.errors.password && (
-                <p className="mt-1 text-sm text-rose-500 font-medium">{form.formState.errors.password.message}</p>
+                <p className="mt-1 text-sm text-rose-500 font-medium">
+                  {form.formState.errors.password.message}
+                </p>
               )}
             </div>
           </div>
@@ -112,7 +129,9 @@ export default function LoginPage() {
             className="w-full flex items-center justify-center gap-2 rounded-xl bg-sky-600 py-4 font-bold text-white shadow-lg shadow-sky-600/20 hover:bg-sky-700 transition-all active:scale-[0.98]"
             disabled={form.formState.isSubmitting}
           >
-            {form.formState.isSubmitting ? "Logging in..." : (
+            {form.formState.isSubmitting ? (
+              "Logging in..."
+            ) : (
               <>
                 <LogIn className="w-5 h-5" />
                 Log In
@@ -122,7 +141,10 @@ export default function LoginPage() {
 
           <p className="text-center text-slate-600 font-medium pt-2">
             Don&apos;t have an account?{" "}
-            <Link href="/register" className="text-sky-600 hover:text-sky-700 hover:underline transition-all">
+            <Link
+              href="/register"
+              className="text-sky-600 hover:text-sky-700 hover:underline transition-all"
+            >
               Sign up
             </Link>
           </p>
