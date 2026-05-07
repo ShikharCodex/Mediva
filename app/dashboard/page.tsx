@@ -11,6 +11,7 @@ import {
   Volume2, VolumeX, Printer, Globe
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -458,9 +459,11 @@ export default function DashboardPage() {
                       <div className="p-6 space-y-6">
                         {report.imageUrl && (
                           <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 print:hidden w-full sm:w-64">
-                            <img 
+                            <Image 
                               src={report.imageUrl} 
                               alt="Uploaded medical document" 
+                              width={800}
+                              height={600}
                               className="w-full h-auto object-cover max-h-48"
                             />
                           </div>
