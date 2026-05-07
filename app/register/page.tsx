@@ -44,10 +44,10 @@ export default function RegisterPage() {
         </Link>
         <div className="max-w-xl">
           <h1 className="text-5xl font-extrabold text-slate-900 leading-tight mb-6">
-            Your Health Records, <br/> <span className="gradient-text">Decoded.</span>
+            Your Health Records, <br /> <span className="gradient-text">Decoded.</span>
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
-            Join thousands of users who trust MedExplain AI to translate complex prescriptions and lab reports into safe, easy-to-understand language.
+            MedExplain AI translates complex prescriptions and lab reports into safe, easy-to-understand language.
           </p>
           <div className="glass rounded-2xl p-6 border border-white/60">
             <p className="text-sm font-semibold text-slate-500 mb-2">SECURITY & PRIVACY</p>
@@ -62,7 +62,7 @@ export default function RegisterPage() {
           <ShieldCheck className="w-6 h-6 text-sky-600" />
           MedExplain AI
         </Link>
-        
+
         <form
           onSubmit={form.handleSubmit(onSubmit)}
           className="w-full max-w-md space-y-6 glass rounded-[2rem] p-8 sm:p-10 border border-white/60"
@@ -123,7 +123,7 @@ export default function RegisterPage() {
             </div>
           </div>
 
-          <button 
+          <button
             type="submit"
             className="w-full flex items-center justify-center gap-2 rounded-xl bg-sky-600 py-4 font-bold text-white shadow-lg shadow-sky-600/20 hover:bg-sky-700 transition-all active:scale-[0.98]"
             disabled={form.formState.isSubmitting}
@@ -135,7 +135,7 @@ export default function RegisterPage() {
               </>
             )}
           </button>
-          
+
           <p className="text-center text-slate-600 font-medium pt-2">
             Already have an account?{" "}
             <Link href="/login" className="text-sky-600 hover:text-sky-700 hover:underline transition-all">
