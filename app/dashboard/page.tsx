@@ -400,6 +400,9 @@ export default function DashboardPage() {
               <div className="space-y-6">
                 {visibleReports.map((report) => {
                   const parsed = parseAiResponse(report.aiResponse);
+                  const fullTextToRead = parsed.explanation 
+                    ? [parsed.explanation, parsed.findings, parsed.cautions, parsed.consult].filter(Boolean).join('. ')
+                    : report.aiResponse;
                   return (
                     <article key={report._id} className="glass rounded-[2rem] overflow-hidden border border-white/60 group print:border-none print:shadow-none print:break-inside-avoid">
                       
@@ -425,9 +428,9 @@ export default function DashboardPage() {
                           </div>
                         </div>
                         <div className="flex items-center gap-2 print:hidden">
-                          {parsed.explanation && (
+                          {fullTextToRead && (
                             <button 
-                              onClick={() => toggleSpeech(parsed.explanation, report._id, report.language || 'English')} 
+                              onClick={() => toggleSpeech(fullTextToRead, report._id, report.language || 'English')} 
                               className={`p-2 rounded-lg transition-colors ${speakingId === report._id ? 'bg-sky-100 text-sky-600' : 'text-slate-400 hover:text-sky-600 hover:bg-sky-50'}`}
                               title={speakingId === report._id ? "Stop reading" : "Read aloud"}
                             >
@@ -453,6 +456,16 @@ export default function DashboardPage() {
 
                       {/* Card Body */}
                       <div className="p-6 space-y-6">
+                        {report.imageUrl && (
+                          <div className="rounded-xl overflow-hidden border border-slate-200 bg-slate-50 print:hidden w-full sm:w-64">
+                            <img 
+                              src={report.imageUrl} 
+                              alt="Uploaded medical document" 
+                              className="w-full h-auto object-cover max-h-48"
+                            />
+                          </div>
+                        )}
+
                         {report.urgencyFlag && (
                           <div className="flex items-start gap-3 rounded-xl bg-rose-50 border border-rose-100 p-4 text-rose-800 animate-pulse print:animate-none">
                             <AlertTriangle className="w-5 h-5 flex-shrink-0 mt-0.5" />
