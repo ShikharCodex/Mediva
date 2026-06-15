@@ -40,14 +40,14 @@ export default function RegisterPage() {
       <div className="hidden lg:flex flex-col justify-center flex-1 p-16 relative z-10">
         <Link href="/" className="absolute top-12 left-16 flex items-center gap-2 text-2xl font-bold text-slate-900">
           <ShieldCheck className="w-8 h-8 text-sky-600" />
-          MedExplain <span className="text-sky-600">AI</span>
+          Mediva <span className="text-sky-600">AI</span>
         </Link>
         <div className="max-w-xl">
           <h1 className="text-5xl font-extrabold text-slate-900 leading-tight mb-6">
             Your Health Records, <br /> <span className="gradient-text">Decoded.</span>
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
-            MedExplain AI translates complex prescriptions and lab reports into safe, easy-to-understand language.
+            Mediva AI translates complex prescriptions and lab reports into safe, easy-to-understand language.
           </p>
           <div className="glass rounded-2xl p-6 border border-white/60">
             <p className="text-sm font-semibold text-slate-500 mb-2">SECURITY & PRIVACY</p>
@@ -60,7 +60,7 @@ export default function RegisterPage() {
       <div className="flex-1 flex items-center justify-center p-6 sm:p-12 relative z-10">
         <Link href="/" className="lg:hidden absolute top-8 left-8 flex items-center gap-2 text-xl font-bold text-slate-900">
           <ShieldCheck className="w-6 h-6 text-sky-600" />
-          MedExplain AI
+          Mediva AI
         </Link>
 
         <form

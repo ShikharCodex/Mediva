@@ -255,7 +255,7 @@ export default function DashboardPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-xl font-bold text-slate-900">
             <ShieldCheck className="w-6 h-6 text-sky-600" />
-            MedExplain <span className="text-sky-600">AI</span>
+            Mediva <span className="text-sky-600">AI</span>
           </Link>
           <div className="flex items-center gap-6">
             <div className="hidden sm:flex items-center gap-2 text-sm font-medium text-slate-600 bg-white px-3 py-1.5 rounded-full border border-slate-200">

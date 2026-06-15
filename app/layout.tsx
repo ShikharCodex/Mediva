@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MedExplain AI",
+  title: "Mediva AI",
   description:
     "AI-powered medical report and prescription explanation platform with safety-first guidance.",
 };

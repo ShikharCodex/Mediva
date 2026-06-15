@@ -1,6 +1,6 @@
-# MedExplain AI
+# Mediva AI
 
-MedExplain AI is an intelligent healthcare platform that transforms medicines, prescriptions, and medical reports into clear, reliable, and easy-to-understand insights for everyday users.
+Mediva AI is an intelligent healthcare platform that transforms medicines, prescriptions, and medical reports into clear, reliable, and easy-to-understand insights for everyday users.
 
 ## Features
 

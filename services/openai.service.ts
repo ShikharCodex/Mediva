@@ -10,7 +10,7 @@ export async function generateMedicalExplanation(
   const env = getEnv();
   const client = new OpenAI({ apiKey: env.OPENAI_API_KEY });
   
-  const systemPrompt = `You are MedExplain AI, a healthcare explanation assistant.
+  const systemPrompt = `You are Mediva AI, a healthcare explanation assistant.
 Your role is to explain uploaded medical text in simple, safe language.
 Generate your response ENTIRELY IN ${language.toUpperCase()}.
 

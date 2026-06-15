@@ -43,12 +43,12 @@ export default function LoginPage() {
           className="absolute top-12 left-16 flex items-center gap-2 text-2xl font-bold text-slate-900"
         >
           <ShieldCheck className="w-8 h-8 text-sky-600" />
-          MedExplain <span className="text-sky-600">AI</span>
+          Mediva <span className="text-sky-600">AI</span>
         </Link>
         <div className="max-w-xl">
           <h1 className="text-5xl font-extrabold text-slate-900 leading-tight mb-6">
             Welcome Back to <br />{" "}
-            <span className="gradient-text">MedExplain AI.</span>
+            <span className="gradient-text">Mediva AI.</span>
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-8">
             Log in to access your previous medical report explanations and
@@ -73,7 +73,7 @@ export default function LoginPage() {
           className="lg:hidden absolute top-8 left-8 flex items-center gap-2 text-xl font-bold text-slate-900"
         >
           <ShieldCheck className="w-6 h-6 text-sky-600" />
-          MedExplain AI
+          Mediva AI
         </Link>
 
         <form
@@ -82,7 +82,7 @@ export default function LoginPage() {
         >
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-2">Log In</h2>
-            <p className="text-slate-600">Welcome back to MedExplain AI.</p>
+            <p className="text-slate-600">Welcome back to Mediva AI.</p>
           </div>
 
           <div className="space-y-4">

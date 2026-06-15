@@ -5,7 +5,7 @@ export function Navbar() {
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-xl font-bold text-sky-600">
-          MedExplain AI
+          Mediva AI
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
           <a href="#features">Features</a>

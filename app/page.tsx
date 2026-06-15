@@ -34,7 +34,7 @@ export default function Home() {
 
             <p className="text-xl text-slate-600 leading-relaxed max-w-lg">
               Upload medicine labels, prescriptions, or blood reports.
-              MedExplain AI translates complex medical jargon into safe, clear,
+              Mediva AI translates complex medical jargon into safe, clear,
               and easy-to-understand guidance.
             </p>
 
@@ -117,7 +117,7 @@ export default function Home() {
               Powerful Medical Intelligence
             </h2>
             <p className="text-slate-600 text-lg">
-              MedExplain AI provides AI-generated medical explanations for
+              Mediva AI provides AI-generated medical explanations for
               educational purposes only; final diagnosis, treatment, and medical
               decisions should always come from a qualified doctor or healthcare
               professional.

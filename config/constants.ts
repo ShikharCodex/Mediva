@@ -1,4 +1,4 @@
-export const AUTH_COOKIE = "medexplain_token";
+export const AUTH_COOKIE = "Mediva_token";
 export const DISCLAIMER =
   "This information is for educational purposes only and is not a medical diagnosis. Please consult a qualified doctor.";
 

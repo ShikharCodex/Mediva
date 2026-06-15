@@ -19,7 +19,7 @@ export async function connectToDatabase() {
   if (!cache.promise) {
     const env = getEnv();
     cache.promise = mongoose.connect(env.MONGODB_URI, {
-      dbName: "medexplain",
+      dbName: "Mediva",
       autoIndex: true,
     });
   }
